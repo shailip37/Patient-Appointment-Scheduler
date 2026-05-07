@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Patient Appointment Scheduler</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>Patient Appointment Scheduler</h1>
+
+    <form id="appointmentForm">
+
+      <input
+        type="text"
+        id="patientName"
+        placeholder="Patient Name"
+        required
+      />
+
+      <input
+        type="date"
+        id="appointmentDate"
+        required
+      />
+
+      <input
+        type="time"
+        id="appointmentTime"
+        required
+      />
+
+      <input
+  type="text"
+  id="doctorName"
+  placeholder="Doctor Name"
+  required
+/>
+
+<input
+  type="text"
+  id="reason"
+  placeholder="Reason for Visit"
+  required
+/>
+
+<button type="submit">
+  Add Appointment
+</button>
+
+</form>
+
+    <div id="appointmentsList"></div>
+
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
